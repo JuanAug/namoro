@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poema do Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Crimson+Text&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fdf6f0 url('https://www.transparenttextures.com/patterns/paper-fibers.png') repeat;
+      font-family: 'Crimson Text', serif;
+      color: #4b2e2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: #fff9f5cc;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border: 2px solid #e4cfc3;
+      backdrop-filter: blur(4px);
+      animation: fadeIn 2s ease forwards;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #c2818c;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 8px 0;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInParagraph 0.8s ease forwards;
+    }
+
+    p:nth-child(n+2) {
+      animation-delay: calc(0.3s + 0.1s * var(--i));
+    }
+
+    @keyframes fadeInParagraph {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.95rem;
+      font-style: italic;
+      color: #a07b7b;
+    }
+
+    /* Responsivo para celulares */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Para o Amor da Minha Vida</h1>
+    <div id="poema">
+      <p style="--i:0;">Amor assim, tão forte, tão sincero,</p>
+      <p style="--i:1;">Guarda em si histórias que venero.</p>
+      <p style="--i:2;">O mundo é outro desde que você chegou,</p>
+      <p style="--i:3;">Razão e emoção, enfim, se encontrou.</p>
+      <p style="--i:4;">Até o silêncio tem som quando há paixão;</p>
+      <p style="--i:5;">O destino sorriu na mesma direção;</p>
+      <p style="--i:6;">Palavras não bastam pra descrever o que eu sinto,</p>
+      <p style="--i:7;">Razões mil pra estar contigo.</p>
+      <p style="--i:8;">Em cada detalhe, há um pouco de "nós",</p>
+      <p style="--i:9;">Sorrisos e planos ditos a sós.</p>
+      <p style="--i:10;">Especial é pouco pra te definir,</p>
+      <p style="--i:11;">Nem mil poesias vão conseguir.</p>
+      <p style="--i:12;">Teu jeito me encanta mais a cada segundo,</p>
+      <p style="--i:13;">Existe algo em ti que desperta o desejo mais profundo;</p>
+      <p style="--i:14;">Eu faria tudo de novo, facilmente,</p>
+      <p style="--i:15;">Sendo com você, não seria diferente.</p>
+      <p style="--i:16;">Tem sido mágico dividir essa estrada,</p>
+      <p style="--i:17;">Á cada dia, minha alma fica mais apaixonada;</p>
+      <p style="--i:18;">Lembre-se: nem tudo está tão claro,</p>
+      <p style="--i:19;">Isto ainda guarda um segredo raro.</p>
+      <p style="--i:20;">Busque nas entrelinhas com atenção,</p>
+      <p style="--i:21;">Em cada palavra pulsa uma intenção.</p>
+      <p style="--i:22;">Refletir é o que vai te guiar,</p>
+      <p style="--i:23;">A verdade, com calma, você vai achar.</p>
+      <p style="--i:24;">Dentro das linhas, está a direção…</p>
+      <p style="--i:25;">O que será que diz meu coração?</p>
+    </div>
+    <div class="footer">Te amo muito! — e o melhor ainda está por vir 💖</div>
+  </div>
+</body>
+</html>
